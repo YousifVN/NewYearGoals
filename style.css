@@ -1,0 +1,87 @@
+/* Apply styles to center elements */
+body,
+html {
+    min-height: 100vh;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f0f0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+}
+
+/* Center all sections */
+header,
+main,
+footer,
+#userGoals,
+#completedGoals {
+    width: 80%;
+    margin: 20px 0;
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+h1 {
+    color: #333;
+    margin-top: 0; /* Remove top margin for h1 */
+}
+
+p {
+    color: #555;
+}
+
+#goalInput {
+    width: calc(100% - 20px);
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+button {
+    padding: 5px 15px; /* Adjust button padding for smaller size */
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Remove top margin for h2 within #userGoals and #completedGoals */
+#userGoals h2,
+#completedGoals h2 {
+    margin-top: 0;
+}
+
+/* Center text within ul */
+#userGoals ul,
+#completedGoals ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+}
+
+footer {
+    color: #888;
+}
